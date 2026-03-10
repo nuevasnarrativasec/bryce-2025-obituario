@@ -1290,7 +1290,7 @@ body {
     background-image: 
         radial-gradient(ellipse at 20% 50%, rgba(200,195,185,0.6) 0%, transparent 60%),
         radial-gradient(ellipse at 80% 30%, rgba(220,215,205,0.4) 0%, transparent 50%);
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -1368,6 +1368,7 @@ body {
     color: #111;
     margin-bottom: 30px;
     font-weight: 400;
+    text-align: center;
 }
 
 .obituario-nombre {
@@ -1384,6 +1385,7 @@ body {
     font-weight: 300;
     color: #555;
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 /* Zona CTA con divisores */
