@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un mundo para Bryce</title>
+    <link rel="stylesheet" href="./css/style.css?v35">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Ocultar anuncios y elementos no deseados */  
+        
+        body.story{
+            height: auto !important;
+            min-height: inherit !important;
+        }
+        .overflow-y-hidden{
+            overflow-y: scroll !important;
+        }
+
+        #clever-45754-1988799-sticky-footer,    
+        .tp-modal,
+        .tp-backdrop.tp-active,
+        .content_gpt_top_ads, 
+        .sticky-top, 
+        .nav-d__menu.active,
+        #gpt_cover,
+        .content_gpt_top_ads,
+        .skin-template-model0.ads_pushed,
+        .skin-template-model0,
+        #clever-45754-889974-sticky-footer,
+        #clever-45754-1475206-sticky-footer-iframe,
+        #gpt_zocalo, 
+        #clever-45754-sticky-footer-shadow,
+        #browsi_wrapper_0_ai_1_rc_0,
+        #browsi_wrapper_1_ai_1_rc_0,
+        #browsi_wrapper_2_ai_1_rc_0,
+        #browsi_wrapper_3_ai_1_rc_0,
+        #browsi_wrapper_4_ai_1_rc_0,
+        #browsi_wrapper_5_ai_1_rc_0,
+        #browsi_wrapper_6_ai_1_rc_0,
+        #browsi_wrapper_7_ai_1_rc_0,
+        #browsi_wrapper_8_ai_1_rc_0,
+        #browsi_wrapper_9_ai_1_rc_0,
+        #browsi_wrapper_10_ai_1_rc_0,
+        .fs-sticky-footer,
+        .orp-player-wrapper,
+        #clever-45754-sticky-footer,
+        #clever-45754-1475206-sticky-footer-shadow,
+        #elcomercio_zocalo,
+        .cl-container{
+            display: none !important;
+            height: 0 !important;
+        }   
+        #header-container,
+        .nav-d__main-scroll.scrolled{
+            z-index: 99999999;
+        }
+        #nav-wm-container{
+            position: relative;
+            z-index: 99999999;
+        }
+        .skin-template-model0 {
+		    top: 100px !important;
+		    z-index: -1 !important;
+		}
+        body{
+            overflow-y: scroll !important;
+        }
+        .content-layout-container {
+            background-color: transparent !important;
+        }
+        .tp-modal-open{
+            overflow: auto !important;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- OBITUARIO - Pantalla inicial              -->
+    <!-- ======================================== -->
+    <div id="obituario-overlay" class="obituario-overlay">
+        
+        <!-- Sección superior: foto + título -->
+        <div class="obituario-top">
+            <div class="obituario-top-inner">
+                <div class="obituario-foto-col">
+                    <img src="./img/bryce-obituario.png" alt="Alfredo Bryce Echenique" class="obituario-foto">
+                </div>
+                <div class="obituario-titulo-col">
+                    <!--<div class="obituario-logo">El Comercio</div>-->
+                    <!--<p class="obituario-antetitulo">In memoriam</p>-->
+                    <h1 class="obituario-titulo">Alfredo Bryce Echenique</h1>
+                    <!--<p class="obituario-nombre">Alfredo Bryce Echenique</p>-->
+                    <p class="obituario-fechas">1939 &ndash; 2026</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separador + botón -->
+        <div class="obituario-cta-zone">
+            <div class="obituario-divider"></div>
+            <button class="obituario-btn" id="btnVerHomenaje">Ver homenaje</button>
+            <div class="obituario-divider"></div>
+        </div>
+
+        <!-- Sección inferior: texto biográfico -->
+        <div class="obituario-bio">
+            <div class="obituario-bio-inner">
+                <p>El cronista de una clase social en decadencia, aquel que encontró humor hasta en la tragedia, el maestro de la ternura. Eso y más se ha dicho de Alfredo Bryce Echenique (Lima, 1939), tal vez el mayor escritor peruano vivo. Con un total de doce novelas publicadas y decenas de cuentos, el autor que vivió entre Europa y el Perú (donde ahora radica) publicó de manera constante y, desde un inicio, dejó huella en la literatura peruana.</p>
+                <p>Su nombre ya se había hecho conocido antes de dedicarse a las letras. En 1952 este diario consignó que el entonces adolescente Bryce había pasado por un fatal “callejón oscuro” en el colegio Santa María Marianistas; como resultado del castigo terminó desmayado. La noticia fue reportada por El Comercio. Su padre, Francisco Bryce Arróspide, lo sacó del colegio y lo mandó al internado San Pablo.</p>
+                <p>Luego de estudiar derecho para satisfacer a su padre se fue a Europa, donde consolidó su carrera de escritor por décadas. Su primera obra, el libro de cuentos “Huerto cerrado” (1968), se publicó originalmente en Cuba. Encontrar esta edición fuera del país insular fue una tarea casi imposible.</p>
+                <p>Con su primera novela, “Un mundo para Julius” (1970), Bryce Echenique realizó una radiografía a las personas que mejor conoció; aquellos que solo tenían dinero. En su libro de memorias “Permiso para vivir” (1993) el escritor cuenta que en 1972 los escritores Mario Vargas Llosa y Julio Ramón Ribeyro presentaron la novela de su amigo a los premios de fomento a la cultura Ricardo Palma, que ganó. Bryce Echenique cree que el libro sentó como anillo al dedo al gobierno militar, que había emprendido una campaña contra la oligarquía.</p>
+                <p>
+                    “’Un mundo para Julius’ reproduce, con rara imparcialidad, la vida privilegiada de los señores y la precaria de los siervos; compendia la injusticia social en un hogar de familia”, escribió en este Diario el crítico literario Abelardo Oquendo, una vez la obra llegó al Perú en 1971.
+                </p>
+                <p>
+                    “Aún circula por ahí la anécdota de aquel miembro de mi familia, tan conservador como despistado, que asistió al acto de entrega de los premios, y que al escuchar al ministro de Educación decir que entre el general Velasco y Alfredo Bryce Echenique habían liquidado a la oligarquía peruana, sufrió un fuerte desmayo y tuvo que abandonar el Instituto Nacional de Cultura en camilla”, contó el autor en sus memorias.
+                </p>
+                <p>
+                    En el transcurso de los años Bryce Echenique mantuvo un ritmo constante de publicaciones. Siguieron las novelas “Tantas veces Pedro” (1977), “La vida exagerada de Martín Romaña” (1981), “El hombre que hablaba de Octavia de Cádiz” (1985), “No me esperen en abril” (1995), entre otras. Ganó el Premio Planeta con la novela “El huerto de mi amada” (2002).
+                </p>
+                <p>
+                    En 2009 el escritor fue sancionado por el Instituto Nacional de Defensa de la Competencia y de la Protección de la Propiedad Intelectual de Perú (INDECOPI) por plagiar 16 artículos periodísticos.
+                </p>
+                <p>
+                    En el 2012 publicó su última novela, “Dándole pena a la tristeza”. Ese mismo año recibió el Premio FIL de Literatura en Lenguas Romances de la Feria Internacional del Libro de Guadalajara.
+                </p>
+                <div class="obituario-cta-bottom">
+                    <div class="obituario-divider"></div>
+                    <button class="obituario-btn" id="btnVerHomenaje2">Ver homenaje</button>
+                    <div class="obituario-divider"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FIN OBITUARIO -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo"></div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <h2 class="menu-title">Personajes</h2>
+        <div class="menu-item" data-character="julius">
+            <div class="menu-item-icon">
+                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-1.png" alt="Julius miniatura" width="100%">
+            </div>
+            <div class="menu-item-text">
+                <h3>Julius</h3>
+                <p>un inocente en la barbarie</p>
+            </div>
+        </div>
+        <div class="menu-item" data-character="vilma">
+            <div class="menu-item-icon">
+                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-6.png" alt="Vilma miniatura" width="100%">
+            </div>
+            <div class="menu-item-text">
+                <h3>Vilma</h3>
+                <p>madre es la que cría</p>
+            </div>
+        </div>
+        <div class="menu-item" data-character="sevilla">
+            <div class="menu-item-icon">
+                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-2.png" alt="Sevilla miniatura" width="100%">
+            </div>
+            <div class="menu-item-text">
+                <h3>Sevilla</h3>
+                <p>Lorna una vez, lorna siempre</p>
+            </div>
+        </div>
+        <div class="menu-item" data-character="martin">
+            <div class="menu-item-icon">
+                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-3.png" alt="Martín Romaña miniatura" width="100%">
+            </div>
+            <div class="menu-item-text">
+                <h3>Martín Romaña</h3>
+                <p>una pequeña rebelión interna</p>
+            </div>
+        </div>
+        <div class="menu-item" data-character="octavia">
+            <div class="menu-item-icon">
+                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-7.png" alt="Octavia miniatura" width="100%">
+            </div>
+            <div class="menu-item-text">
+                <h3>Octavia de Cádiz</h3>
+                <p>la única que aguanta al protagonista</p>
+            </div>
+        </div>
+        <div class="menu-item" data-character="manuco">
+            <div class="menu-item-icon">
+                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-5.png" alt="Mañuco miniatura" width="100%">
+            </div>
+            <div class="menu-item-text">
+                <h3>Mañuco</h3>
+                <p>entre la expectativa familiar y el deseo propio</p>
+            </div>
+        </div>        
+        <div class="menu-item" data-character="manongo">
+            <div class="menu-item-icon">
+                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-4.png" alt="Manongo Sterne miniatura" width="100%">
+            </div>
+            <div class="menu-item-text">
+                <h3>Manongo Sterne</h3>
+                <p>un testigo de la decadencia</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Section 0: Inicio -->
+        <section class="section" id="section-inicio" data-section="0">
+            <div class="section-content">
+                <div class="inicio-container">
+                    <div class="inicio-text">
+                        <h1 class="inicio-title">
+                            Un mundo para
+                            <span class="bryce">Bryce</span>
+                        </h1>
+                        <div class="inicio-description">
+                            <p>A propósito del cumpleaños 87 del escritor peruano Alfredo Bryce Echenique, repasamos siete de sus personajes que perviven en el imaginario peruano a pesar de los años.</p>
+                        </div>
+                    </div>
+                    <div class="inicio-character">
+                        <div class="character-main">
+                            <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/bryce-inicio.png" alt="Bryce Echenique" width="100%">
+                            <div class="character-miniature" data-next="julius">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-1.png?v2" alt="Julius miniatura">
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/scroll-icon.png" alt="" width="100%" class="scroll-icon">
+        </section>
+
+        <!-- Section 1: Julius -->
+        <section class="section" id="section-julius" data-section="1">
+            <div class="section-content">
+                <div class="character-section">
+                    <div class="character-layout">
+                        <div class="character-left">
+                            <div class="character-info-box">
+                                <h2>Julius</h2>
+                                <p class="subtitle">un inocente en la barbarie</p>
+                                <div class="circle-info">
+                                    <h3>Un mundo <br> para Julius</h3>
+                                    <p class="year">1970</p>
+                                    <p> El protagonista de la primera novela de Bryce Echenique, un niño que es testigo inocente de dinámicas sociales en las que no puede intervenir.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-center">
+                            <div class="box-nombre-movil">
+                                <h2>Julius</h2>
+                                <p class="subtitle">un inocente en la barbarie</p>
+                            </div>
+                            <div class="character-image">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-1.png?v2" alt="Julius">
+                                <div class="character-miniature" data-next="vilma">
+                                    <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-6.png" alt="Sevilla miniatura">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-right">
+                            <div class="character-text-box">                                
+                                <p><span>En su condición de niño, el pequeño Julius se siente en la libertad de moverse por espacios que, para sus mayores, no deben ser franqueados.</span> La cercanía que este pequeño miembro de la oligarquía hacia la servidumbre es una muestra de su inocencia; esto lo hace además el protagonista ideal, porque puede moverse con soltura entre ambos mundos. Tal y como Abelardo Oquendo escribió para este Diario en 1971, es "el niño sensible y solitario que va descubriendo una realidad cruel que no comprende pero que aprende con tristeza y pesar. Así, Julius no es sólo el protagonista del libro sino también su instrumento de exploración".</p>
+                                <div class="character-quote">
+                                    "Fuerte Apache era el dormitorio de Julius. Allí estaban todos los cowboys del mundo pegados a las paredes. (…) Los indios ya habían muerto todos para que Julius se pudiera acostar tranquilo y sin reclamar".
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>                
+            </div>
+            <div class="hombro-1"></div>
+        </section>
+
+        <!-- Section 2: Vilma -->
+        <section class="section" id="section-vilma" data-section="2">
+            <div class="section-content">
+                <div class="character-section">
+                    <div class="character-layout">
+                        <div class="character-left">
+                            <div class="character-info-box">
+                                <h2>Vilma</h2>
+                                <p class="subtitle">madre es la que cría</p>
+                                <div class="circle-info">
+                                    <h3>Un mundo <br> para Julius</h3>
+                                    <p class="year">1970</p>
+                                    <p> Víctima de un sistema que solo busca perpetuarse, Vilma hizo todo lo que su entorno esperó de ella y aún así la desecharon.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-center">
+                            <div class="box-nombre-movil">
+                                <h2>Vilma</h2>
+                                <p class="subtitle">madre es la que cría</p>
+                            </div>
+                            <div class="character-image">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-6.png" alt="Vilma">
+                                <div class="character-miniature" data-next="sevilla">
+                                    <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-2.png" alt="Sevilla miniatura">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-right">
+                            <div class="character-text-box">                                
+                                <p>Con el punto de vista que Bryce elige para "Un mundo para Julius", queda claro que el mundo juzga a Vilma por su apariencia: al pensar en ella los adultos primero destacan su origen andino y, segundo, su atractivo físico. Pero donde los demás solo ven con los ojos, Julius vio con el corazón; encontró en ella a la madre que doña Susan eligió no ser. Por eso mismo duele tanto que, cuando ha sufrido violencia en la casa de sus empleadores, estos la despidan y premien a su agresor, hermano mayor de Julius. Para Vilma, la calle; para Santiago, un partidito de golf. La novela habla sobre el dolor de crecer y el destino de este personaje marca un traumático final de la niñez para el protagonista.</p>
+                                <div class="character-quote">
+                                    "Vilma adoraba a Julius. Sus orejotas, su pinta increíble habían despertado en ella enorme cariño".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hombro-6"></div>
+        </section>
+
+        <!-- Section 3: Sevilla -->
+        <section class="section" id="section-sevilla" data-section="3">
+            <div class="section-content">
+                <div class="character-section">
+                    <div class="character-layout">
+                        <div class="character-left">
+                            <div class="character-info-box">
+                                <h2>Sevilla</h2>
+                                <p class="subtitle">Lorna una vez, lorna siempre</p>
+                                <div class="circle-info">
+                                    <h3>Muerte de <br> Sevilla en Madrid</h3>
+                                    <p class="year">1972</p>
+                                    <p>El escritor demuestra una vez más que puede escribir personajes no solo miserables, sino patéticos hasta decir basta.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-center">
+                            <div class="box-nombre-movil">
+                                <h2>Sevilla</h2>
+                                <p class="subtitle">Lorna una vez, lorna siempre</p>
+                            </div>
+                            <div class="character-image">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-2.png" alt="Sevilla">
+                                <div class="character-miniature" data-next="martin">
+                                    <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-3.png" alt="Martin Romaña">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-right">
+                            <div class="character-text-box">
+                                <p>Sevilla es tan insignificante, tan mínimo en su esencia humana que no se permite fantasear con mujeres. No, eso es pecado; las chicas que intenta ver en la calle las imagina como esposas para el que quizás fue su único amigo y cuya muerte lo marcó para siempre. Empleado de la municipalidad de Lima, entró sin buscarlo a un concurso que terminó ganando y por el cual tendrá que viajar a España, dejando en la ciudad a su anciana y muy católica tía. "Envuelto cómodamente en una gruesa capa de prejuicios y de formas inauténticas de vida, víctima fácil de 'un criollismo algo amargado', Sevilla vive en un mundo iluso, incapaz de dirigir su propia existencia", contó en ese entonces el crítico José Miguel Oviedo.</p>
+                                <div class="character-quote">
+                                   "Sevilla sentía de golpe la profunda tristeza de haber quedado abandonado en la calle".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hombro-2"></div>
+        </section>       
+
+        <!-- Section 4: Martín Romaña -->
+        <section class="section" id="section-martin" data-section="4">
+            <div class="section-content">
+                <div class="character-section">
+                    <div class="character-layout">
+                        <div class="character-left">
+                            <div class="character-info-box">
+                                <h2>Martín Romaña</h2>
+                                <p class="subtitle">una pequeña rebelión interna</p>
+                                <div class="circle-info">
+                                    <h3>Cuadernos de navegación en un sillón Voltaire</h3>
+                                    <p class="year">1981-1985</p>
+                                    <p>El alter ego definitivo de un autor que hace ejercicio de una voz propia e inconfundible. Hay demasiados puntos en común entre Alfredo Bryce Echenique y su creación, Martín Romaña. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-center">
+                            <div class="box-nombre-movil">
+                                <h2>Martín Romaña</h2>
+                                <p class="subtitle">una pequeña rebelión interna</p>
+                            </div>
+                            <div class="character-image">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-3.png" alt="Martín Romaña">
+                                <div class="character-miniature" data-next="octavia">
+                                    <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-7.png" alt="Octavia de Cadiz">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-right">
+                            <div class="character-text-box">                                
+                                <p>Ambos son escritores peruanos, los dos vienen de familias de rancio abolengo y se fueron a París en su juventud por una beca; allí trabajaron en esa ciudad como profesores. Pero las diferencias acaban aquí, porque mientras el hombre real, Bryce, cosechó éxito con sus obras, el ficticio, Romaña, fue el escritor que no escribía nada. Cuando por fin tiene las mejores ideas, ya es demasiado tarde. Su saga de altibajos humorísticos no alcanzaba en un solo libro, así que el autor le dio dos: "La vida exagerada de Martín Romaña" (1981) y "El hombre que hablaba de Octavia de Cádiz" (1985).</p>
+                                <div class="character-quote">
+                                    "Le estaba bastando una miradita al departamento para llegar a la conclusión de que yo era el escritor más fracasado del mundo".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hombro-4"></div>
+        </section>
+
+        <!-- Section 5: Octavia -->
+        <section class="section" id="section-octavia" data-section="5">
+            <div class="section-content">
+                <div class="character-section">
+                    <div class="character-layout">
+                        <div class="character-left">
+                            <div class="character-info-box">
+                                <h2>Octavia de Cádiz</h2>
+                                <p class="subtitle">la única que aguanta al protagonista</p>
+                                <div class="circle-info">
+                                    <h3>Cuadernos de <br> navegación en un <br> sillón Voltaire</h3>
+                                    <p class="year">1981 - 1985</p>
+                                    <p>De haber sido escrita hoy, internet la llamaría una 'manic pixie dream girl', que existe solo para desarrollar al protagonista. Bryce trascendió el cliché antes de que exista con un personaje redondo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-center">
+                            <div class="box-nombre-movil">
+                                <h2>Octavia <br> de Cádiz</h2>
+                                <p class="subtitle">la única que aguanta al protagonista</p>
+                            </div>
+                            <div class="character-image">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-7.png" alt="Octavia de Cádiz">
+                                <div class="character-miniature" data-next="manuco">
+                                    <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-5.png" alt="Mañuco miniatura">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-right">
+                            <div class="character-text-box">                                
+                                <p>Si la novela se llama "El hombre que hablaba de Octavia de Cádiz", entonces la mujer tiene que ser central. Descrita como un ser increíblemente miope, de piernas "divertidas", todo lo que sabemos de Petronila Marie Amélie, alias 'Octavia', es por el punto de vista del protagonista, Martín Romaña. Amor platónico, pero también físico y prohibido (es menor de edad y su familia de abolengo rechaza la relación), el lector incluso llega a cuestionarse si es real o un invento del deprimido Romaña, quien de no escribir su prometida novela ha llevado a otro nivel la "vida exagerada" que dio nombre al primer libro. A todo efecto, ella tiene influencia en él, y eso es tan real como la ficción permite.</p>
+                                <div class="character-quote">
+                                    "Octavia lloraba de dieciocho años de edad y yo de treinta y tres, lo cual, la verdad, nos conmovió bastante".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hombro-7"></div>
+        </section>
+
+        <!-- Section 6: Mañuco -->
+        <section class="section" id="section-manuco" data-section="6">
+            <div class="section-content">
+                <div class="character-section">
+                    <div class="character-layout">
+                        <div class="character-left">
+                            <div class="character-info-box">
+                                <h2>Mañuco</h2>
+                                <p class="subtitle">entre la expectativa familiar y el deseo propio</p>
+                                <div class="circle-info">
+                                    <h3>Dos señoras conversan</h3>
+                                    <p class="year">1990</p>
+                                    <p>¿Hasta dónde estarías dispuesto a llegar con tal de conseguir un objetivo que ni siquiera es tuyo, sino de tus padres?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-center">
+                            <div class="box-nombre-movil">
+                                <h2>Mañuco</h2>
+                                <p class="subtitle">entre la expectativa familiar y el deseo propio</p>
+                            </div>
+                            <div class="character-image">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-5.png" alt="Mañuco">
+                                <div class="character-miniature" data-next="manongo">
+                                    <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-4.png" alt="Manongo Sterne miniatura">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-right">
+                            <div class="character-text-box">                                
+                                <p>En una de las tres novelas breves que componen "Dos señoras conversan", el personaje Mañuco Cisneros recuerda a la persona que en buena parte forjó su adolescencia. Encontrar la billetera perdida del gringo Pancho Malkovich, ingeniero de la Cerro de Pasco Cooper Corporation, lo puso en lo que entonces creyó que era el camino para cumplir el sueño de sus padres: que estudie en Estados Unidos, lejos del común de los peruanos. Tanto quiso seguir ese camino que incluso dejó plantada a su cita por irse a almorzar con el gringo y su séquito. Años después este encuentro tendrá una resolución entre nostalgia y golpe de realidad.</p>
+                                <div class="character-quote">
+                                    "La moraleja de todo aquello sería papá, mamá, realmente he estado en un lugar donde el diablo perdió el poncho".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hombro-3"></div>
+        </section>
+
+        <!-- Section 7: Manongo Sterne -->
+        <section class="section" id="section-manongo" data-section="7">
+            <div class="section-content">
+                <div class="character-section">
+                    <div class="character-layout">
+                        <div class="character-left">
+                            <div class="character-info-box">
+                                <h2>Manongo Sterne</h2>
+                                <p class="subtitle">un testigo de la decadencia</p>
+                                <div class="circle-info">
+                                    <h3>No me esperen <br> en abril</h3>
+                                    <p class="year">1995</p>
+                                    <p>Otro personaje con tintes autobiográficos, que examina su realidad a lo largo de cinco décadas y observa cómo caen los gigantes, o quienes se creían gigantes, eran solo hombres.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character-center">
+                            <div class="box-nombre-movil">
+                                <h2>Manongo Sterne</h2>
+                                <p class="subtitle">un testigo de la decadencia</p>
+                            </div>
+                            <div class="character-image">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/personaje-4.png" alt="Manongo Sterne">
+                            </div>
+                        </div>
+                        <div class="character-right">
+                            <div class="character-text-box">                                
+                                <p>Bryce llevó su conocida anécdota del "callejón oscuro" a la literatura. A Manongo Sterne, alumno de un colegio de curas, le hacen eso y termina en la clínica. Pero en lugar de preocupar a su entorno, esta situación hace que todos, desde sus familiares hasta sus maestros y compañeros, culpen a la víctima. Lo tratan de poco hombre, de subhumano. Lo que sigue es una vida marcada por la no pertenencia, así como por el hallazgo del verdadero y único amor, además de mostrar, como si se tratara de un desastre en cámara lenta, el derrumbe de la oligarquía peruana a la que el mismo Bryce perteneció. En "Un mundo para Julius", Echenique mostró a los ricos en todo su apogeo; en "No me esperen en abril", les hizo un epitafio.</p>
+                                <div class="character-quote">
+                                    "Dios no existe, Manongo… ningún lugar mejor que una iglesia para descubrir que Dios no existe".
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hombro-5"></div>
+        </section>            
+        
+        <!-- Section 9: Créditos -->
+        <section class="section" id="section-creditos" data-section="8">
+            <div class="section-content">
+                <div class="character-section">                                    
+                        <div class="box-footer">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <span>Textos:</span>
+                                        Alfonso Rivadeneyra
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Ilustración de portada:</span>
+                                        Víctor Aguilar Rúa
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Ilustraciones de personajes:</span>
+                                        Generadas con IA, bajo dirección editorial
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Realización:</span>
+                                        Nuevas narrativas EC
+                                    </p>
+                                </li>
+                            </ul> 
+                            <a href="http://elcomercio.pe/luces/alfredo-bryce-echenique-especial-un-mundo-para-bryce-personajes-y-legado-literario-especdis-noticia/">
+                                <img src="https://nuevasnarrativasec.github.io/bryce-2025/img/btn-inicio.png" alt="" width="100%" class="btn-inicio">
+                            </a>
+                        </div>  
+                        
+                </div>
+            </div>
+        </section>  
+    </main>
+
+    <div class="scroll-indicator" id="scrollIndicator">
+        Scroll para explorar
+    </div>
+    <!-- Indicador de scroll móvil -->
+    <div class="mobile-scroll-hint" id="mobileScrollHint">
+        <span>Desliza</span>
+        <div class="chevron"></div>
+    </div>
+
+    <script src="./js/main.js?v35"></script>
+</body>
+</html>
